@@ -1,0 +1,64 @@
+void main() {
+  
+  String firstname = "Syed Obaid";
+  String lname = "Hashmi";
+  String father_name = "Syed Abdul Imran";
+  var college = "Govt. Degree SRE MAJEED";
+  String reg = "C1K3S777745/pre";
+  int rollno= 012398;
+  int max_marks=550;
+  int obtained_marks;
+  var gradeA;
+  var phy=81;
+  var maths=91;
+  var eng=53;
+  var isl=80;
+  var urdu=45;
+  var chem=95;
+  int tmarks = phy+maths+eng+isl+urdu+chem;
+
+ 
+  
+  
+  print( "\t\t\tBOARD OF INTERMEDIATE EDUCATION KARACHI\n\t\t\t${"H.S.C PART I(INTERMEDIATE EXAMINATION 2019)"} " );
+   print ("\n\n\t\t\t\tSTATEMENT OF MARKS");
+  print ("\t\t\t\t___________________");
+  print ("\n\tRoll No              ${rollno} \n");
+  print ("\tName                 ${firstname} ${lname}  ");
+  print ("\tFather's Name        ${father_name}  ");
+  print("\tRegitration No       ${reg}");
+  print("\tCollege/private      ${college} \n");
+ 
+  print("");
+  
+  double percentage= (tmarks/max_marks)*100;
+
+
+  
+  
+
+  
+  if(percentage>90&&percentage<100)
+     gradeA ='A';
+
+  else if(percentage>80&&percentage<90) 
+    gradeA ='B';
+  
+  else if(percentage>70&&percentage<80) 
+   gradeA ='C';
+  
+  else if(percentage>60&&percentage<70) 
+  gradeA ='D';
+  
+  else if(percentage>50&&percentage<60) 
+  gradeA ='E';
+  
+  else if (percentage>40&&percentage<50) 
+  gradeA ='F';
+  
+print ("\tSubject \t MAX     \t   Secured\t     Remarks");
+print("|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|");
+  print("\n\tTotal  \t MAX Marks:  ${max_marks}\tSecured Marks: ${tmarks} \tGrade:${gradeA}");
+  
+  
+}
